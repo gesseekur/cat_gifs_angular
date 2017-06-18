@@ -1,15 +1,14 @@
 'use strict';
 
-describe('myApp.view1 module', function() {
+describe('myApp.cats', function() {
 
-  beforeEach(module('myApp.view1'));
+  beforeEach(module('myApp.cats'));
 
-  describe('view1 controller', function(){
+  describe('CatsCtrl', function(){
 
-    it('should ....', inject(function($controller) {
-      //spec body
-      var view1Ctrl = $controller('View1Ctrl');
-      expect(view1Ctrl).toBeDefined();
+    it('should define CatsCtrl', inject(function($controller) {
+      var CatsCtrl = $controller('CatsCtrl');
+      expect(CatsCtrl).toBeDefined();
     }));
 
   });
